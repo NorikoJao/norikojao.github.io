@@ -318,10 +318,17 @@
 </footer>
 <!-- partial -->
   <script  src="./script.js"></script>
-  <div id="myModal" class="modal"style=" z-index:7;overflow:hidden"aria-hidden="true">
+  <div id="myModal" class="modal"style=" z-index:7;"aria-hidden="true">
 
 
     <style>
+
+.modal{
+overflow:hidden;
+
+}
+
+
     .flex-container {
       display: flex;
       flex-wrap: wrap;
@@ -380,6 +387,12 @@ font-size:0.8em;
   text-align: center;
 }
       @media screen and (max-width: 1024px) {
+
+        .modal{
+          overflow-y: auto;
+
+        }
+
 
         .imgContainer{
         width:100%;
